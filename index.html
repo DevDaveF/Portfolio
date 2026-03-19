@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dave Filepp Portfolio Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu-container">
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Recent Work</a></li>
+            <li><a href="#">Get In Touch</a></li>
+          </ul>
+        </nav>
+        <div class="socials">
+          <img
+            src="./images/LinkedIn.svg"
+            alt="LinkedIn logo"
+            class="linkedIn-logo"
+          />
+          <img
+            src="./images/Behance.svg"
+            alt="Behance logo"
+            class="behance-logo"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero-container">
+        <div class="main-hero-container">
+          <div class="text-container">
+            <h1>Dave Filepp</h1>
+            <p>
+              Highly analytical and results-driven professional with a unique
+              background spanning Management Consulting, Financial Services Risk
+              Management & Trading, and Software Developement. As a former
+              Division I athlete, I bring a competitive edge, discipline, and a
+              deep technical interest in fintech, algorithmic trading, and
+              data-driven systems.
+            </p>
+            <button>Let's Connect ></button>
+          </div>
+          <div class="picture-container">
+            <img
+              src="./images/Profile-pic.svg"
+              alt="Picture of Dave Filepp with his 2 sons"
+            />
+          </div>
+        </div>
+        <div class="p-hero-lower">
+          <div class="div-stats">
+            <h3>Founded</h3>
+            <p>Dreamscape Marketing LLC | A Traders Path</p>
+          </div>
+          <div class="div-stats">
+            <h3>Exited</h3>
+            <p>Dreamscape Marketing LLC</p>
+          </div>
+          <div class="div-stats">
+            <h3>Alumnus</h3>
+            <p>
+              Villanova University | Division I Athletics | JPMorgan | Accenture
+              Management Consulting
+            </p>
+          </div>
+          <div class="div-stats">
+            <h3>Worked With</h3>
+            <p>Four Bulge Bracket Banks</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy David Filepp all rights reserved.</footer>
+    <script>
+      function toggleMenu() {
+        const navigation = document.querySelector("nav");
+        const menuBox = document.querySelector(".menu-container");
+
+        navigation.classList.toggle("active");
+        menuBox.classlist.toggle("active");
+      }
+    </script>
+  </body>
+</html>
